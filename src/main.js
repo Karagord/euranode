@@ -50,7 +50,7 @@ app.get('/put_profile', (req, res) => {
     user.updateUser(profile)
 });
 
-app.listen(process.env.PORT, async () => {
+app.listen(process.env.PORT || port, async () => {
     bdd.default.up()
     console.log(`Example app listening on port ${port}!`);
 });
