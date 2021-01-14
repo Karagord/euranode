@@ -3,10 +3,10 @@ const moment = require('moment')
 const pg = require('knex')({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        user: 'postgres',
-        password: 'Euratestpass',
-        database: 'euratest'
+        host: 'ec2-54-75-225-52.eu-west-1.compute.amazonaws.com',
+        user: 'cnecdbjovqkure',
+        password: '16bcd239f0e6829b1b41710d721a99f254d17987e488c4a7fdf9afa78a4556a3',
+        database: 'd9rhvpdti09gr8'
     }
 });
 
