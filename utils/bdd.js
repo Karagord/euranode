@@ -11,7 +11,7 @@ const pg = require('knex')({
 });
 
 const up = async () => {
-    await pg.schema.dropTable('users');
+    // await pg.schema.dropTable('users');
 
     await pg.schema.createTable('users', table => {
         table.increments('id');
